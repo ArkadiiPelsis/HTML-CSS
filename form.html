@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Изображения</a></li>
+            <li><a href="page2.html">Ссылки</a></li>
+            <li><a href="content.html">Текст</a></li>
+            <li><a href="form.html">Форма</a></li>
+        </ul>
+    </nav>
+    <form>
+        <fieldset id="person">
+                   <legend>Персональные данные</legend>
+                <label for="name">Имя</label>
+                <input type="text" placeholder="Владимир" id="name">
+                <label for="ferst">Фамилия</label>
+                <input type="text" placeholder="Пупкин" id="ferst">
+                <label for="last">Отчество</label>
+                <input type="text" placeholder="Васильевич" id="last">
+                <label for="date">Дата Рождения</label>
+                <input id="date" type="date" min="2000.01.01" >
+                <label for="tel">Телефон</label>
+                <input id="tel" type="tel" placeholder="89217744980">
+                <label for="firma">Название фирмы</label>
+                <input type="text" id="firma">	
+                <label for="selectCity">Город проживания</label>
+                <select id="selectCity">
+                     <optgroup disabled label="Выберите город"></optgroup><option>Москва</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Великий новгород</option>
+                    <option>Псков</option>
+                </select>	
+        </fieldset>
+        <fieldset id="zakaz">
+            <legend>Выбор Товара</legend>
+            <ul id="formazakaza">
+                <li><select select name="select" size="3">
+                <optgroup label="Выберите кассу">
+                <option id="kassa3">Касса1</option>
+                <option id="kassa2">Касса2</option>
+                <option id="kassa3">Касса3</option>
+                </optgroup>
+            </select></li>
+            <li><p>укажите количество</p><input type="number" name="number"min="1" max="50" step="1"></li>
+            <li><button name="submit_btn" value="some_value" type="submit">добавить</button></li></ul>
+        <label>настройка кассы<input type="checkbox">
+        </label>
+        <label>установка фискального накопителя<input type="checkbox">
+        </label>
+        <label>Негарантийный ремонт<input type="checkbox">
+        </label>
+        </fieldset>
+        <fieldset id="dostavka">
+            <legend><strong>Выберите удобный способ доставки для товара</strong></legend>
+            <label for="free">Бесплатная доставка по Спб</label>
+            <input id="free" check type="radio">
+            <input type="number" disabled value="0">
+            <label for="mos">Москва</label>
+            <input check type="radio" id="mos">
+            <input type="number" disabled value="1000">
+            <label for="nov">Великий Новгород</label>
+            <input id="nov" check type="radio">
+            <input type="number" disabled value="500">
+            <label for="pskov">Псков</label>
+            <input id="pskov" check type="radio">
+            <input type="number" disabled value="500">
+            <p>Время Доставки</p>
+            <label for="datetime">Выберите даты и времени доставки</label>
+            <input id="datetime" type="datetime-local">
+            <label for="textarea">Добавить коментарий к доставки</label><textarea name="textarea" id="textarea" cols="30" rows="10" autofocus required></textarea>
+    
+    
+    
+        </fieldset>	
+    </form>
+</body>
